@@ -1,0 +1,50 @@
+.Icon {
+  position: fixed;
+  right: 5%;
+  top: 3%;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+.cloud1 {
+  position: absolute;
+  right: -1em;
+  bottom: 0.5em;
+  font-size: 2em;
+  animation: moveBackAndForth 25000ms infinite linear;
+}
+.cloud2 {
+  position: absolute;
+  right: 1.7em;
+  bottom: 0.6em;
+  font-size: 2em;
+  animation: moveBackAndForth 30000ms infinite linear;
+}
+
+/* .sun {
+  animation: spin 10000ms infinite linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes moveBackAndForth {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(0.35em);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

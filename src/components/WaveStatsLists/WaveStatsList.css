@@ -1,0 +1,11 @@
+.WaveStatsLists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: wrap;
+  height: 56vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}

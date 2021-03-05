@@ -1,0 +1,7 @@
+.WhiteBackground {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 56vh;
+}

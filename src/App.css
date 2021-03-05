@@ -1,0 +1,13 @@
+.root {
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #1ff3e1 10%,
+    #1f158d 100%
+  );
+}
+
+.card {
+  height: var(--card-height);
+  min-height: var(--card-minHeight);
+  margin: 0 25px;
+}
