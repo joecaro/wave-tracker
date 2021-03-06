@@ -1,8 +1,8 @@
 .root {
   background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    #1ff3e1 10%,
-    #1f158d 100%
+    farthest-corner at 20px -50px,
+    #1fecf3 5%,
+    #15358d 100%
   );
 }
 

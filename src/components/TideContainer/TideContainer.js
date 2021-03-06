@@ -74,9 +74,9 @@ const TideContainer = () => {
 
   return (
     <div className='TideContainer card'>
-      <div className='board'>
+      {/* <div className='board'>
         <Surfboard />
-      </div>
+      </div> */}
       <div className='border'></div>
       <div className='currentTime' style={handleMargin()}>
         <i class='bi bi-arrow-up'></i>

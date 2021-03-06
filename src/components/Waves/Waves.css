@@ -1,7 +1,7 @@
 .waves {
   position: fixed;
   width: 100vw;
-  height: 30vh;
+  height: 38vh;
   min-height: 100px;
   max-height: 600px;
   bottom: 55vh;
@@ -39,12 +39,12 @@
 
 @media (max-height: 800px) {
   .waves {
-    height: 18vh;
+    height: 20vh;
   }
 }
 
 @media (max-width: 450px) {
   .waves {
-    height: 18vh;
+    height: 45vh;
   }
 }

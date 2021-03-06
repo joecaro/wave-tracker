@@ -3,5 +3,11 @@
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 56vh;
+  height: 70vh;
+}
+
+@media (max-height: 800px) {
+  .WhiteBackground {
+    height: 55vh;
+  }
 }
