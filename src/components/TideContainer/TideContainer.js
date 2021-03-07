@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import TideCard from "..//TideCard/TideCard";
-import Surfboard from "../Surfboard/Surfboard";
 import "./TideContainer.css";
 // const lat = 33.79;
 // const lng = -78.73;

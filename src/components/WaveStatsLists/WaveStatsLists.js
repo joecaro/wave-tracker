@@ -8,8 +8,8 @@ const WaveStatsLists = ({ data }) => {
   return (
     <div className='WaveStatsLists'>
       <TideContainer data={data} />
-      <TempCard data={data} />
-      <Graph />
+      <TempCard data={data[0]} />
+      <Graph className='waveHeightGraph' data={data} />
     </div>
   );
 };

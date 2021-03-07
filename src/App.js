@@ -5,19 +5,18 @@ import WaveStatsLists from "./components/WaveStatsLists/WaveStatsLists";
 import WhiteBackground from "./components/WhiteBackground/WhiteBackground";
 import WeatherIcon from "./components/WeatherIcon/WeatherIcon";
 import WindIcon from "./components/WindIcon/WindIcon";
-import Graph from "./components/Graph/Graph";
-import waveData from './lib/data.json'
+import waveData from "./lib/data.json";
 
 function App() {
-  let data = waveData[0]
+  let data = waveData;
 
   return (
     <React.Fragment>
       <WaveStatsLists data={data} />
       <Waves />
       <WhiteBackground />
-      <WindIcon data={data} />
-      <WeatherIcon data={data} />
+      <WindIcon data={data[0]} />
+      <WeatherIcon data={data[0]} />
     </React.Fragment>
   );
 }
