@@ -1,1352 +1,1352 @@
 [
-        {
-            "airTemperature": {
-                "noaa": 9.6
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 213.03
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.13
-            },
-            "secondarySwellPeriod": {
-                "noaa": 3.9
-            },
-            "swellDirection": {
-                "noaa": 109.95
-            },
-            "swellHeight": {
-                "noaa": 0.46
-            },
-            "swellPeriod": {
-                "noaa": 7.06
-            },
-            "time": "2021-03-05T05:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 8.7
-            },
-            "waveDirection": {
-                "noaa": 110.9
-            },
-            "waveHeight": {
-                "noaa": 0.6
-            },
-            "wavePeriod": {
-                "noaa": 7.03
-            },
-            "windDirection": {
-                "noaa": 358.22
-            },
-            "windSpeed": {
-                "noaa": 3.06
-            },
-            "windWaveDirection": {
-                "noaa": 313.58
-            },
-            "windWaveHeight": {
-                "noaa": 0.33
-            }
+    {
+        "airTemperature": {
+            "noaa": 3.92
         },
-        {
-            "airTemperature": {
-                "noaa": 8.88
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 225.34
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.14
-            },
-            "secondarySwellPeriod": {
-                "noaa": 2.8
-            },
-            "swellDirection": {
-                "noaa": 109.6
-            },
-            "swellHeight": {
-                "noaa": 0.44
-            },
-            "swellPeriod": {
-                "noaa": 6.95
-            },
-            "time": "2021-03-05T06:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 8.25
-            },
-            "waveDirection": {
-                "noaa": 110.53
-            },
-            "waveHeight": {
-                "noaa": 0.61
-            },
-            "wavePeriod": {
-                "noaa": 6.93
-            },
-            "windDirection": {
-                "noaa": 21.23
-            },
-            "windSpeed": {
-                "noaa": 3.6
-            },
-            "windWaveDirection": {
-                "noaa": 345.14
-            },
-            "windWaveHeight": {
-                "noaa": 0.38
-            }
+        "cloudCover": {
+            "noaa": 31
         },
-        {
-            "airTemperature": {
-                "noaa": 7.87
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 190.14
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.15
-            },
-            "secondarySwellPeriod": {
-                "noaa": 4.75
-            },
-            "swellDirection": {
-                "noaa": 109.33
-            },
-            "swellHeight": {
-                "noaa": 0.4
-            },
-            "swellPeriod": {
-                "noaa": 6.88
-            },
-            "time": "2021-03-05T07:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 7.3
-            },
-            "waveDirection": {
-                "noaa": 83.34
-            },
-            "waveHeight": {
-                "noaa": 0.66
-            },
-            "wavePeriod": {
-                "noaa": 5.84
-            },
-            "windDirection": {
-                "noaa": 12.1
-            },
-            "windSpeed": {
-                "noaa": 3.33
-            },
-            "windWaveDirection": {
-                "noaa": 357.63
-            },
-            "windWaveHeight": {
-                "noaa": 0.47
-            }
+        "secondarySwellDirection": {
+            "noaa": 123.06
         },
-        {
-            "airTemperature": {
-                "noaa": 6.86
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 154.93
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.15
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.71
-            },
-            "swellDirection": {
-                "noaa": 109.05
-            },
-            "swellHeight": {
-                "noaa": 0.36
-            },
-            "swellPeriod": {
-                "noaa": 6.81
-            },
-            "time": "2021-03-05T08:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 6.34
-            },
-            "waveDirection": {
-                "noaa": 56.14
-            },
-            "waveHeight": {
-                "noaa": 0.7
-            },
-            "wavePeriod": {
-                "noaa": 4.74
-            },
-            "windDirection": {
-                "noaa": 2.98
-            },
-            "windSpeed": {
-                "noaa": 3.05
-            },
-            "windWaveDirection": {
-                "noaa": 10.13
-            },
-            "windWaveHeight": {
-                "noaa": 0.56
-            }
+        "secondarySwellHeight": {
+            "noaa": 0.11
         },
-        {
-            "airTemperature": {
-                "noaa": 5.84
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 119.73
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.66
-            },
-            "swellDirection": {
-                "noaa": 108.78
-            },
-            "swellHeight": {
-                "noaa": 0.32
-            },
-            "swellPeriod": {
-                "noaa": 6.74
-            },
-            "time": "2021-03-05T09:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 5.39
-            },
-            "waveDirection": {
-                "noaa": 28.95
-            },
-            "waveHeight": {
-                "noaa": 0.75
-            },
-            "wavePeriod": {
-                "noaa": 3.65
-            },
-            "windDirection": {
-                "noaa": 353.85
-            },
-            "windSpeed": {
-                "noaa": 2.78
-            },
-            "windWaveDirection": {
-                "noaa": 22.62
-            },
-            "windWaveHeight": {
-                "noaa": 0.65
-            }
+        "secondarySwellPeriod": {
+            "noaa": 8.03
         },
-        {
-            "airTemperature": {
-                "noaa": 5.22
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 119.99
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.65
-            },
-            "swellDirection": {
-                "noaa": 108.56
-            },
-            "swellHeight": {
-                "noaa": 0.3
-            },
-            "swellPeriod": {
-                "noaa": 6.65
-            },
-            "time": "2021-03-05T10:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 4.88
-            },
-            "waveDirection": {
-                "noaa": 32.18
-            },
-            "waveHeight": {
-                "noaa": 0.78
-            },
-            "wavePeriod": {
-                "noaa": 3.78
-            },
-            "windDirection": {
-                "noaa": 359.21
-            },
-            "windSpeed": {
-                "noaa": 2.94
-            },
-            "windWaveDirection": {
-                "noaa": 25.8
-            },
-            "windWaveHeight": {
-                "noaa": 0.69
-            }
+        "swellDirection": {
+            "noaa": 115.78
         },
-        {
-            "airTemperature": {
-                "noaa": 4.59
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 120.24
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.63
-            },
-            "swellDirection": {
-                "noaa": 108.34
-            },
-            "swellHeight": {
-                "noaa": 0.28
-            },
-            "swellPeriod": {
-                "noaa": 6.57
-            },
-            "time": "2021-03-05T11:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 4.36
-            },
-            "waveDirection": {
-                "noaa": 35.41
-            },
-            "waveHeight": {
-                "noaa": 0.8
-            },
-            "wavePeriod": {
-                "noaa": 3.92
-            },
-            "windDirection": {
-                "noaa": 4.57
-            },
-            "windSpeed": {
-                "noaa": 3.09
-            },
-            "windWaveDirection": {
-                "noaa": 28.97
-            },
-            "windWaveHeight": {
-                "noaa": 0.73
-            }
+        "swellHeight": {
+            "noaa": 0.19
         },
-        {
-            "airTemperature": {
-                "noaa": 3.96
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 120.5
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.62
-            },
-            "swellDirection": {
-                "noaa": 108.12
-            },
-            "swellHeight": {
-                "noaa": 0.26
-            },
-            "swellPeriod": {
-                "noaa": 6.48
-            },
-            "time": "2021-03-05T12:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 3.85
-            },
-            "waveDirection": {
-                "noaa": 38.64
-            },
-            "waveHeight": {
-                "noaa": 0.83
-            },
-            "wavePeriod": {
-                "noaa": 4.05
-            },
-            "windDirection": {
-                "noaa": 9.93
-            },
-            "windSpeed": {
-                "noaa": 3.25
-            },
-            "windWaveDirection": {
-                "noaa": 32.15
-            },
-            "windWaveHeight": {
-                "noaa": 0.77
-            }
+        "swellPeriod": {
+            "noaa": 5.64
         },
-        {
-            "airTemperature": {
-                "noaa": 5.12
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 121.74
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.64
-            },
-            "swellDirection": {
-                "noaa": 107.2
-            },
-            "swellHeight": {
-                "noaa": 0.24
-            },
-            "swellPeriod": {
-                "noaa": 6.45
-            },
-            "time": "2021-03-05T13:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 5.95
-            },
-            "waveDirection": {
-                "noaa": 49
-            },
-            "waveHeight": {
-                "noaa": 0.84
-            },
-            "wavePeriod": {
-                "noaa": 4.34
-            },
-            "windDirection": {
-                "noaa": 11.16
-            },
-            "windSpeed": {
-                "noaa": 3.55
-            },
-            "windWaveDirection": {
-                "noaa": 36.75
-            },
-            "windWaveHeight": {
-                "noaa": 0.78
-            }
+        "time": 0,
+        "visibility": {
+            "noaa": 24.13
         },
-        {
-            "airTemperature": {
-                "noaa": 6.27
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 122.99
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.15
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.65
-            },
-            "swellDirection": {
-                "noaa": 106.27
-            },
-            "swellHeight": {
-                "noaa": 0.23
-            },
-            "swellPeriod": {
-                "noaa": 6.43
-            },
-            "time": "2021-03-05T14:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 8.05
-            },
-            "waveDirection": {
-                "noaa": 59.37
-            },
-            "waveHeight": {
-                "noaa": 0.85
-            },
-            "wavePeriod": {
-                "noaa": 4.63
-            },
-            "windDirection": {
-                "noaa": 12.4
-            },
-            "windSpeed": {
-                "noaa": 3.85
-            },
-            "windWaveDirection": {
-                "noaa": 41.34
-            },
-            "windWaveHeight": {
-                "noaa": 0.8
-            }
+        "waterTemperature": {
+            "noaa": 2.87
         },
-        {
-            "airTemperature": {
-                "noaa": 7.43
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 124.23
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.15
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.67
-            },
-            "swellDirection": {
-                "noaa": 105.35
-            },
-            "swellHeight": {
-                "noaa": 0.21
-            },
-            "swellPeriod": {
-                "noaa": 6.4
-            },
-            "time": "2021-03-05T15:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 10.15
-            },
-            "waveDirection": {
-                "noaa": 69.73
-            },
-            "waveHeight": {
-                "noaa": 0.86
-            },
-            "wavePeriod": {
-                "noaa": 4.92
-            },
-            "windDirection": {
-                "noaa": 13.63
-            },
-            "windSpeed": {
-                "noaa": 4.15
-            },
-            "windWaveDirection": {
-                "noaa": 45.94
-            },
-            "windWaveHeight": {
-                "noaa": 0.81
-            }
+        "waveDirection": {
+            "noaa": 71.02
         },
-        {
-            "airTemperature": {
-                "noaa": 8.59
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 126.49
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.66
-            },
-            "swellDirection": {
-                "noaa": 90.78
-            },
-            "swellHeight": {
-                "noaa": 0.39
-            },
-            "swellPeriod": {
-                "noaa": 6.1
-            },
-            "time": "2021-03-05T16:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 11.42
-            },
-            "waveDirection": {
-                "noaa": 72.97
-            },
-            "waveHeight": {
-                "noaa": 0.83
-            },
-            "wavePeriod": {
-                "noaa": 5.12
-            },
-            "windDirection": {
-                "noaa": 9.24
-            },
-            "windSpeed": {
-                "noaa": 3.9
-            },
-            "windWaveDirection": {
-                "noaa": 19.2
-            },
-            "windWaveHeight": {
-                "noaa": 0.6
-            }
+        "waveHeight": {
+            "noaa": 0.36
         },
-        {
-            "airTemperature": {
-                "noaa": 9.74
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 128.75
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.16
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.64
-            },
-            "swellDirection": {
-                "noaa": 76.22
-            },
-            "swellHeight": {
-                "noaa": 0.56
-            },
-            "swellPeriod": {
-                "noaa": 5.79
-            },
-            "time": "2021-03-05T17:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 12.69
-            },
-            "waveDirection": {
-                "noaa": 76.22
-            },
-            "waveHeight": {
-                "noaa": 0.79
-            },
-            "wavePeriod": {
-                "noaa": 5.31
-            },
-            "windDirection": {
-                "noaa": 4.86
-            },
-            "windSpeed": {
-                "noaa": 3.65
-            },
-            "windWaveDirection": {
-                "noaa": 352.45
-            },
-            "windWaveHeight": {
-                "noaa": 0.39
-            }
+        "wavePeriod": {
+            "noaa": 4.45
         },
-        {
-            "airTemperature": {
-                "noaa": 10.9
-            },
-            "cloudCover": {
-                "noaa": 0
-            },
-            "secondarySwellDirection": {
-                "noaa": 131.01
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.17
-            },
-            "secondarySwellPeriod": {
-                "noaa": 8.63
-            },
-            "swellDirection": {
-                "noaa": 61.65
-            },
-            "swellHeight": {
-                "noaa": 0.74
-            },
-            "swellPeriod": {
-                "noaa": 5.49
-            },
-            "time": "2021-03-05T18:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 13.96
-            },
-            "waveDirection": {
-                "noaa": 79.46
-            },
-            "waveHeight": {
-                "noaa": 0.76
-            },
-            "wavePeriod": {
-                "noaa": 5.51
-            },
-            "windDirection": {
-                "noaa": 0.47
-            },
-            "windSpeed": {
-                "noaa": 3.4
-            },
-            "windWaveDirection": {
-                "noaa": 325.71
-            },
-            "windWaveHeight": {
-                "noaa": 0.18
-            }
+        "windDirection": {
+            "noaa": 54.36
         },
-        {
-            "airTemperature": {
-                "noaa": 10.98
-            },
-            "cloudCover": {
-                "noaa": 15
-            },
-            "secondarySwellDirection": {
-                "noaa": 137.38
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.15
-            },
-            "secondarySwellPeriod": {
-                "noaa": 7.93
-            },
-            "swellDirection": {
-                "noaa": 64.98
-            },
-            "swellHeight": {
-                "noaa": 0.71
-            },
-            "swellPeriod": {
-                "noaa": 5.64
-            },
-            "time": "2021-03-05T19:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 13.44
-            },
-            "waveDirection": {
-                "noaa": 80.29
-            },
-            "waveHeight": {
-                "noaa": 0.72
-            },
-            "wavePeriod": {
-                "noaa": 5.67
-            },
-            "windDirection": {
-                "noaa": 355.83
-            },
-            "windSpeed": {
-                "noaa": 3.34
-            },
-            "windWaveDirection": {
-                "noaa": 331.77
-            },
-            "windWaveHeight": {
-                "noaa": 0.2
-            }
+        "windSpeed": {
+            "noaa": 1.24
         },
-        {
-            "airTemperature": {
-                "noaa": 11.06
-            },
-            "cloudCover": {
-                "noaa": 30
-            },
-            "secondarySwellDirection": {
-                "noaa": 143.76
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.12
-            },
-            "secondarySwellPeriod": {
-                "noaa": 7.23
-            },
-            "swellDirection": {
-                "noaa": 68.31
-            },
-            "swellHeight": {
-                "noaa": 0.67
-            },
-            "swellPeriod": {
-                "noaa": 5.79
-            },
-            "time": "2021-03-05T20:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 12.93
-            },
-            "waveDirection": {
-                "noaa": 81.11
-            },
-            "waveHeight": {
-                "noaa": 0.69
-            },
-            "wavePeriod": {
-                "noaa": 5.84
-            },
-            "windDirection": {
-                "noaa": 351.18
-            },
-            "windSpeed": {
-                "noaa": 3.27
-            },
-            "windWaveDirection": {
-                "noaa": 337.82
-            },
-            "windWaveHeight": {
-                "noaa": 0.22
-            }
+        "windWaveDirection": {
+            "noaa": 68.55
         },
-        {
-            "airTemperature": {
-                "noaa": 11.14
-            },
-            "cloudCover": {
-                "noaa": 45
-            },
-            "secondarySwellDirection": {
-                "noaa": 150.13
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.1
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.53
-            },
-            "swellDirection": {
-                "noaa": 71.64
-            },
-            "swellHeight": {
-                "noaa": 0.64
-            },
-            "swellPeriod": {
-                "noaa": 5.94
-            },
-            "time": "2021-03-05T21:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 12.42
-            },
-            "waveDirection": {
-                "noaa": 81.94
-            },
-            "waveHeight": {
-                "noaa": 0.65
-            },
-            "wavePeriod": {
-                "noaa": 6
-            },
-            "windDirection": {
-                "noaa": 346.54
-            },
-            "windSpeed": {
-                "noaa": 3.21
-            },
-            "windWaveDirection": {
-                "noaa": 343.88
-            },
-            "windWaveHeight": {
-                "noaa": 0.24
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 9.38
-            },
-            "cloudCover": {
-                "noaa": 60
-            },
-            "secondarySwellDirection": {
-                "noaa": 133.78
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.11
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.44
-            },
-            "swellDirection": {
-                "noaa": 73.61
-            },
-            "swellHeight": {
-                "noaa": 0.62
-            },
-            "swellPeriod": {
-                "noaa": 6.01
-            },
-            "time": "2021-03-05T22:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 9.83
-            },
-            "waveDirection": {
-                "noaa": 81.6
-            },
-            "waveHeight": {
-                "noaa": 0.63
-            },
-            "wavePeriod": {
-                "noaa": 6.05
-            },
-            "windDirection": {
-                "noaa": 353.49
-            },
-            "windSpeed": {
-                "noaa": 2.51
-            },
-            "windWaveDirection": {
-                "noaa": 345.67
-            },
-            "windWaveHeight": {
-                "noaa": 0.22
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 7.62
-            },
-            "cloudCover": {
-                "noaa": 75
-            },
-            "secondarySwellDirection": {
-                "noaa": 117.44
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.13
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.34
-            },
-            "swellDirection": {
-                "noaa": 75.59
-            },
-            "swellHeight": {
-                "noaa": 0.6
-            },
-            "swellPeriod": {
-                "noaa": 6.09
-            },
-            "time": "2021-03-05T23:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 7.24
-            },
-            "waveDirection": {
-                "noaa": 81.27
-            },
-            "waveHeight": {
-                "noaa": 0.6
-            },
-            "wavePeriod": {
-                "noaa": 6.1
-            },
-            "windDirection": {
-                "noaa": 0.43
-            },
-            "windSpeed": {
-                "noaa": 1.81
-            },
-            "windWaveDirection": {
-                "noaa": 347.46
-            },
-            "windWaveHeight": {
-                "noaa": 0.21
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 5.86
-            },
-            "cloudCover": {
-                "noaa": 90
-            },
-            "secondarySwellDirection": {
-                "noaa": 101.09
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.14
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.25
-            },
-            "swellDirection": {
-                "noaa": 77.56
-            },
-            "swellHeight": {
-                "noaa": 0.58
-            },
-            "swellPeriod": {
-                "noaa": 6.16
-            },
-            "time": "2021-03-06T00:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 4.65
-            },
-            "waveDirection": {
-                "noaa": 80.93
-            },
-            "waveHeight": {
-                "noaa": 0.58
-            },
-            "wavePeriod": {
-                "noaa": 6.15
-            },
-            "windDirection": {
-                "noaa": 7.38
-            },
-            "windSpeed": {
-                "noaa": 1.11
-            },
-            "windWaveDirection": {
-                "noaa": 349.25
-            },
-            "windWaveHeight": {
-                "noaa": 0.19
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 5.67
-            },
-            "cloudCover": {
-                "noaa": 91.67
-            },
-            "secondarySwellDirection": {
-                "noaa": 115.89
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.13
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.42
-            },
-            "swellDirection": {
-                "noaa": 77.63
-            },
-            "swellHeight": {
-                "noaa": 0.55
-            },
-            "swellPeriod": {
-                "noaa": 6.1
-            },
-            "time": "2021-03-06T01:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 4.62
-            },
-            "waveDirection": {
-                "noaa": 81.62
-            },
-            "waveHeight": {
-                "noaa": 0.55
-            },
-            "wavePeriod": {
-                "noaa": 6.13
-            },
-            "windDirection": {
-                "noaa": 17.56
-            },
-            "windSpeed": {
-                "noaa": 1.05
-            },
-            "windWaveDirection": {
-                "noaa": 348.55
-            },
-            "windWaveHeight": {
-                "noaa": 0.18
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 5.48
-            },
-            "cloudCover": {
-                "noaa": 93.33
-            },
-            "secondarySwellDirection": {
-                "noaa": 130.69
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.13
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.58
-            },
-            "swellDirection": {
-                "noaa": 77.69
-            },
-            "swellHeight": {
-                "noaa": 0.51
-            },
-            "swellPeriod": {
-                "noaa": 6.03
-            },
-            "time": "2021-03-06T02:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 4.58
-            },
-            "waveDirection": {
-                "noaa": 82.3
-            },
-            "waveHeight": {
-                "noaa": 0.53
-            },
-            "wavePeriod": {
-                "noaa": 6.12
-            },
-            "windDirection": {
-                "noaa": 27.74
-            },
-            "windSpeed": {
-                "noaa": 0.98
-            },
-            "windWaveDirection": {
-                "noaa": 347.85
-            },
-            "windWaveHeight": {
-                "noaa": 0.17
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 5.29
-            },
-            "cloudCover": {
-                "noaa": 95
-            },
-            "secondarySwellDirection": {
-                "noaa": 145.49
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.12
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.75
-            },
-            "swellDirection": {
-                "noaa": 77.76
-            },
-            "swellHeight": {
-                "noaa": 0.48
-            },
-            "swellPeriod": {
-                "noaa": 5.97
-            },
-            "time": "2021-03-06T03:00:00+00:00",
-            "visibility": {
-                "noaa": 24.13
-            },
-            "waterTemperature": {
-                "noaa": 4.55
-            },
-            "waveDirection": {
-                "noaa": 82.99
-            },
-            "waveHeight": {
-                "noaa": 0.5
-            },
-            "wavePeriod": {
-                "noaa": 6.1
-            },
-            "windDirection": {
-                "noaa": 37.92
-            },
-            "windSpeed": {
-                "noaa": 0.92
-            },
-            "windWaveDirection": {
-                "noaa": 347.15
-            },
-            "windWaveHeight": {
-                "noaa": 0.16
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 5.41
-            },
-            "cloudCover": {
-                "noaa": 96.67
-            },
-            "secondarySwellDirection": {
-                "noaa": 144.93
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.12
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.71
-            },
-            "swellDirection": {
-                "noaa": 77.01
-            },
-            "swellHeight": {
-                "noaa": 0.45
-            },
-            "swellPeriod": {
-                "noaa": 5.92
-            },
-            "time": "2021-03-06T04:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 4.81
-            },
-            "waveDirection": {
-                "noaa": 84.64
-            },
-            "waveHeight": {
-                "noaa": 0.47
-            },
-            "wavePeriod": {
-                "noaa": 6.09
-            },
-            "windDirection": {
-                "noaa": 33.61
-            },
-            "windSpeed": {
-                "noaa": 0.95
-            },
-            "windWaveDirection": {
-                "noaa": 44.85
-            },
-            "windWaveHeight": {
-                "noaa": 0.74
-            }
-        },
-        {
-            "airTemperature": {
-                "noaa": 5.53
-            },
-            "cloudCover": {
-                "noaa": 98.33
-            },
-            "secondarySwellDirection": {
-                "noaa": 144.38
-            },
-            "secondarySwellHeight": {
-                "noaa": 0.13
-            },
-            "secondarySwellPeriod": {
-                "noaa": 6.68
-            },
-            "swellDirection": {
-                "noaa": 76.26
-            },
-            "swellHeight": {
-                "noaa": 0.42
-            },
-            "swellPeriod": {
-                "noaa": 5.86
-            },
-            "time": "2021-03-06T05:00:00+00:00",
-            "visibility": {
-                "noaa": 24.14
-            },
-            "waterTemperature": {
-                "noaa": 5.07
-            },
-            "waveDirection": {
-                "noaa": 86.28
-            },
-            "waveHeight": {
-                "noaa": 0.45
-            },
-            "wavePeriod": {
-                "noaa": 6.09
-            },
-            "windDirection": {
-                "noaa": 29.29
-            },
-            "windSpeed": {
-                "noaa": 0.99
-            },
-            "windWaveDirection": {
-                "noaa": 102.54
-            },
-            "windWaveHeight": {
-                "noaa": 1.32
-            }
+        "windWaveHeight": {
+            "noaa": 0.32
         }
-    ]
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.67
+        },
+        "cloudCover": {
+            "noaa": 31
+        },
+        "secondarySwellDirection": {
+            "noaa": 119.05
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.09
+        },
+        "secondarySwellPeriod": {
+            "noaa": 8.87
+        },
+        "swellDirection": {
+            "noaa": 138.06
+        },
+        "swellHeight": {
+            "noaa": 0.13
+        },
+        "swellPeriod": {
+            "noaa": 6.29
+        },
+        "time": 1,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 2.6
+        },
+        "waveDirection": {
+            "noaa": 71.99
+        },
+        "waveHeight": {
+            "noaa": 0.37
+        },
+        "wavePeriod": {
+            "noaa": 4.49
+        },
+        "windDirection": {
+            "noaa": 32.23
+        },
+        "windSpeed": {
+            "noaa": 1.1
+        },
+        "windWaveDirection": {
+            "noaa": 67.5
+        },
+        "windWaveHeight": {
+            "noaa": 0.33
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.58
+        },
+        "cloudCover": {
+            "noaa": 25.83
+        },
+        "secondarySwellDirection": {
+            "noaa": 119.29
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.09
+        },
+        "secondarySwellPeriod": {
+            "noaa": 8.81
+        },
+        "swellDirection": {
+            "noaa": 137.56
+        },
+        "swellHeight": {
+            "noaa": 0.13
+        },
+        "swellPeriod": {
+            "noaa": 6.27
+        },
+        "time": 2,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 2.63
+        },
+        "waveDirection": {
+            "noaa": 72.35
+        },
+        "waveHeight": {
+            "noaa": 0.39
+        },
+        "wavePeriod": {
+            "noaa": 4.3
+        },
+        "windDirection": {
+            "noaa": 12.78
+        },
+        "windSpeed": {
+            "noaa": 1.52
+        },
+        "windWaveDirection": {
+            "noaa": 65.19
+        },
+        "windWaveHeight": {
+            "noaa": 0.35
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.5
+        },
+        "cloudCover": {
+            "noaa": 20.67
+        },
+        "secondarySwellDirection": {
+            "noaa": 119.54
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.08
+        },
+        "secondarySwellPeriod": {
+            "noaa": 8.76
+        },
+        "swellDirection": {
+            "noaa": 137.06
+        },
+        "swellHeight": {
+            "noaa": 0.13
+        },
+        "swellPeriod": {
+            "noaa": 6.25
+        },
+        "time": 3,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 2.67
+        },
+        "waveDirection": {
+            "noaa": 72.72
+        },
+        "waveHeight": {
+            "noaa": 0.41
+        },
+        "wavePeriod": {
+            "noaa": 4.1
+        },
+        "windDirection": {
+            "noaa": 353.33
+        },
+        "windSpeed": {
+            "noaa": 1.94
+        },
+        "windWaveDirection": {
+            "noaa": 62.88
+        },
+        "windWaveHeight": {
+            "noaa": 0.38
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.41
+        },
+        "cloudCover": {
+            "noaa": 15.5
+        },
+        "secondarySwellDirection": {
+            "noaa": 119.78
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.08
+        },
+        "secondarySwellPeriod": {
+            "noaa": 8.7
+        },
+        "swellDirection": {
+            "noaa": 136.56
+        },
+        "swellHeight": {
+            "noaa": 0.13
+        },
+        "swellPeriod": {
+            "noaa": 6.23
+        },
+        "time": 4,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 2.71
+        },
+        "waveDirection": {
+            "noaa": 73.08
+        },
+        "waveHeight": {
+            "noaa": 0.43
+        },
+        "wavePeriod": {
+            "noaa": 3.91
+        },
+        "windDirection": {
+            "noaa": 333.88
+        },
+        "windSpeed": {
+            "noaa": 2.36
+        },
+        "windWaveDirection": {
+            "noaa": 60.57
+        },
+        "windWaveHeight": {
+            "noaa": 0.4
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 2.83
+        },
+        "cloudCover": {
+            "noaa": 10.33
+        },
+        "secondarySwellDirection": {
+            "noaa": 124.92
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.09
+        },
+        "secondarySwellPeriod": {
+            "noaa": 7.86
+        },
+        "swellDirection": {
+            "noaa": 115.99
+        },
+        "swellHeight": {
+            "noaa": 0.22
+        },
+        "swellPeriod": {
+            "noaa": 5.51
+        },
+        "time": 5,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 2.29
+        },
+        "waveDirection": {
+            "noaa": 73.71
+        },
+        "waveHeight": {
+            "noaa": 0.48
+        },
+        "wavePeriod": {
+            "noaa": 3.96
+        },
+        "windDirection": {
+            "noaa": 339.11
+        },
+        "windSpeed": {
+            "noaa": 2.48
+        },
+        "windWaveDirection": {
+            "noaa": 39.95
+        },
+        "windWaveHeight": {
+            "noaa": 0.39
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 2.24
+        },
+        "cloudCover": {
+            "noaa": 5.17
+        },
+        "secondarySwellDirection": {
+            "noaa": 130.06
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.11
+        },
+        "secondarySwellPeriod": {
+            "noaa": 7.03
+        },
+        "swellDirection": {
+            "noaa": 95.41
+        },
+        "swellHeight": {
+            "noaa": 0.31
+        },
+        "swellPeriod": {
+            "noaa": 4.8
+        },
+        "time": 6,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 1.87
+        },
+        "waveDirection": {
+            "noaa": 74.35
+        },
+        "waveHeight": {
+            "noaa": 0.52
+        },
+        "wavePeriod": {
+            "noaa": 4
+        },
+        "windDirection": {
+            "noaa": 344.35
+        },
+        "windSpeed": {
+            "noaa": 2.59
+        },
+        "windWaveDirection": {
+            "noaa": 19.32
+        },
+        "windWaveHeight": {
+            "noaa": 0.39
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 1.66
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 135.2
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.19
+        },
+        "swellDirection": {
+            "noaa": 74.84
+        },
+        "swellHeight": {
+            "noaa": 0.4
+        },
+        "swellPeriod": {
+            "noaa": 4.08
+        },
+        "time": 7,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 1.45
+        },
+        "waveDirection": {
+            "noaa": 74.98
+        },
+        "waveHeight": {
+            "noaa": 0.57
+        },
+        "wavePeriod": {
+            "noaa": 4.05
+        },
+        "windDirection": {
+            "noaa": 349.58
+        },
+        "windSpeed": {
+            "noaa": 2.71
+        },
+        "windWaveDirection": {
+            "noaa": 358.7
+        },
+        "windWaveHeight": {
+            "noaa": 0.38
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.92
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 135.05
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.38
+        },
+        "swellDirection": {
+            "noaa": 76.84
+        },
+        "swellHeight": {
+            "noaa": 0.41
+        },
+        "swellPeriod": {
+            "noaa": 4.24
+        },
+        "time": 8,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 4.58
+        },
+        "waveDirection": {
+            "noaa": 76.94
+        },
+        "waveHeight": {
+            "noaa": 0.59
+        },
+        "wavePeriod": {
+            "noaa": 4.21
+        },
+        "windDirection": {
+            "noaa": 350.78
+        },
+        "windSpeed": {
+            "noaa": 3.17
+        },
+        "windWaveDirection": {
+            "noaa": 357.87
+        },
+        "windWaveHeight": {
+            "noaa": 0.41
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 6.18
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 134.9
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.58
+        },
+        "swellDirection": {
+            "noaa": 78.85
+        },
+        "swellHeight": {
+            "noaa": 0.42
+        },
+        "swellPeriod": {
+            "noaa": 4.39
+        },
+        "time": 9,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 7.72
+        },
+        "waveDirection": {
+            "noaa": 78.9
+        },
+        "waveHeight": {
+            "noaa": 0.62
+        },
+        "wavePeriod": {
+            "noaa": 4.36
+        },
+        "windDirection": {
+            "noaa": 351.97
+        },
+        "windSpeed": {
+            "noaa": 3.64
+        },
+        "windWaveDirection": {
+            "noaa": 357.04
+        },
+        "windWaveHeight": {
+            "noaa": 0.43
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 8.44
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 134.75
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.77
+        },
+        "swellDirection": {
+            "noaa": 80.85
+        },
+        "swellHeight": {
+            "noaa": 0.43
+        },
+        "swellPeriod": {
+            "noaa": 4.55
+        },
+        "time": 10,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 10.85
+        },
+        "waveDirection": {
+            "noaa": 80.86
+        },
+        "waveHeight": {
+            "noaa": 0.64
+        },
+        "wavePeriod": {
+            "noaa": 4.52
+        },
+        "windDirection": {
+            "noaa": 353.17
+        },
+        "windSpeed": {
+            "noaa": 4.1
+        },
+        "windWaveDirection": {
+            "noaa": 356.21
+        },
+        "windWaveHeight": {
+            "noaa": 0.46
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 9.81
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 136.39
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.11
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.77
+        },
+        "swellDirection": {
+            "noaa": 81.62
+        },
+        "swellHeight": {
+            "noaa": 0.44
+        },
+        "swellPeriod": {
+            "noaa": 4.73
+        },
+        "time": 11,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 12.38
+        },
+        "waveDirection": {
+            "noaa": 83.26
+        },
+        "waveHeight": {
+            "noaa": 0.63
+        },
+        "wavePeriod": {
+            "noaa": 4.72
+        },
+        "windDirection": {
+            "noaa": 344.98
+        },
+        "windSpeed": {
+            "noaa": 4.17
+        },
+        "windWaveDirection": {
+            "noaa": 354.34
+        },
+        "windWaveHeight": {
+            "noaa": 0.44
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 11.18
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.03
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.11
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.78
+        },
+        "swellDirection": {
+            "noaa": 82.4
+        },
+        "swellHeight": {
+            "noaa": 0.45
+        },
+        "swellPeriod": {
+            "noaa": 4.91
+        },
+        "time": 12,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 13.9
+        },
+        "waveDirection": {
+            "noaa": 85.65
+        },
+        "waveHeight": {
+            "noaa": 0.63
+        },
+        "wavePeriod": {
+            "noaa": 4.92
+        },
+        "windDirection": {
+            "noaa": 336.78
+        },
+        "windSpeed": {
+            "noaa": 4.24
+        },
+        "windWaveDirection": {
+            "noaa": 352.48
+        },
+        "windWaveHeight": {
+            "noaa": 0.41
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 12.54
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 139.67
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.1
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.78
+        },
+        "swellDirection": {
+            "noaa": 83.17
+        },
+        "swellHeight": {
+            "noaa": 0.46
+        },
+        "swellPeriod": {
+            "noaa": 5.09
+        },
+        "time": 13,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 15.43
+        },
+        "waveDirection": {
+            "noaa": 88.05
+        },
+        "waveHeight": {
+            "noaa": 0.62
+        },
+        "wavePeriod": {
+            "noaa": 5.12
+        },
+        "windDirection": {
+            "noaa": 328.59
+        },
+        "windSpeed": {
+            "noaa": 4.31
+        },
+        "windWaveDirection": {
+            "noaa": 350.61
+        },
+        "windWaveHeight": {
+            "noaa": 0.39
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 12.18
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 139.14
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.11
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.71
+        },
+        "swellDirection": {
+            "noaa": 82.81
+        },
+        "swellHeight": {
+            "noaa": 0.45
+        },
+        "swellPeriod": {
+            "noaa": 5.08
+        },
+        "time": 14,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 14.42
+        },
+        "waveDirection": {
+            "noaa": 87.72
+        },
+        "waveHeight": {
+            "noaa": 0.63
+        },
+        "wavePeriod": {
+            "noaa": 5.13
+        },
+        "windDirection": {
+            "noaa": 330.45
+        },
+        "windSpeed": {
+            "noaa": 4.61
+        },
+        "windWaveDirection": {
+            "noaa": 347.92
+        },
+        "windWaveHeight": {
+            "noaa": 0.41
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 11.81
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.61
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.11
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.64
+        },
+        "swellDirection": {
+            "noaa": 82.46
+        },
+        "swellHeight": {
+            "noaa": 0.43
+        },
+        "swellPeriod": {
+            "noaa": 5.06
+        },
+        "time": 15,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 13.41
+        },
+        "waveDirection": {
+            "noaa": 87.4
+        },
+        "waveHeight": {
+            "noaa": 0.63
+        },
+        "wavePeriod": {
+            "noaa": 5.13
+        },
+        "windDirection": {
+            "noaa": 332.31
+        },
+        "windSpeed": {
+            "noaa": 4.9
+        },
+        "windWaveDirection": {
+            "noaa": 345.22
+        },
+        "windWaveHeight": {
+            "noaa": 0.43
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 11.45
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.08
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.57
+        },
+        "swellDirection": {
+            "noaa": 82.1
+        },
+        "swellHeight": {
+            "noaa": 0.42
+        },
+        "swellPeriod": {
+            "noaa": 5.05
+        },
+        "time": 16,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 12.4
+        },
+        "waveDirection": {
+            "noaa": 87.07
+        },
+        "waveHeight": {
+            "noaa": 0.64
+        },
+        "wavePeriod": {
+            "noaa": 5.14
+        },
+        "windDirection": {
+            "noaa": 334.17
+        },
+        "windSpeed": {
+            "noaa": 5.2
+        },
+        "windWaveDirection": {
+            "noaa": 342.53
+        },
+        "windWaveHeight": {
+            "noaa": 0.45
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 9.49
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.44
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.4
+        },
+        "swellDirection": {
+            "noaa": 81.94
+        },
+        "swellHeight": {
+            "noaa": 0.4
+        },
+        "swellPeriod": {
+            "noaa": 5.01
+        },
+        "time": 17,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 9.85
+        },
+        "waveDirection": {
+            "noaa": 54.56
+        },
+        "waveHeight": {
+            "noaa": 0.66
+        },
+        "wavePeriod": {
+            "noaa": 4.62
+        },
+        "windDirection": {
+            "noaa": 333.01
+        },
+        "windSpeed": {
+            "noaa": 4.33
+        },
+        "windWaveDirection": {
+            "noaa": 342.61
+        },
+        "windWaveHeight": {
+            "noaa": 0.5
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 7.52
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.81
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.23
+        },
+        "swellDirection": {
+            "noaa": 81.78
+        },
+        "swellHeight": {
+            "noaa": 0.39
+        },
+        "swellPeriod": {
+            "noaa": 4.96
+        },
+        "time": 18,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 7.3
+        },
+        "waveDirection": {
+            "noaa": 22.06
+        },
+        "waveHeight": {
+            "noaa": 0.69
+        },
+        "wavePeriod": {
+            "noaa": 4.1
+        },
+        "windDirection": {
+            "noaa": 331.85
+        },
+        "windSpeed": {
+            "noaa": 3.46
+        },
+        "windWaveDirection": {
+            "noaa": 342.7
+        },
+        "windWaveHeight": {
+            "noaa": 0.54
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 5.56
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 139.17
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.06
+        },
+        "swellDirection": {
+            "noaa": 81.62
+        },
+        "swellHeight": {
+            "noaa": 0.37
+        },
+        "swellPeriod": {
+            "noaa": 4.92
+        },
+        "time": 19,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 4.75
+        },
+        "waveDirection": {
+            "noaa": 349.55
+        },
+        "waveHeight": {
+            "noaa": 0.71
+        },
+        "wavePeriod": {
+            "noaa": 3.58
+        },
+        "windDirection": {
+            "noaa": 330.69
+        },
+        "windSpeed": {
+            "noaa": 2.59
+        },
+        "windWaveDirection": {
+            "noaa": 342.78
+        },
+        "windWaveHeight": {
+            "noaa": 0.59
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 4.88
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.84
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.09
+        },
+        "swellDirection": {
+            "noaa": 81.37
+        },
+        "swellHeight": {
+            "noaa": 0.36
+        },
+        "swellPeriod": {
+            "noaa": 4.88
+        },
+        "time": 20,
+        "visibility": {
+            "noaa": 24.13
+        },
+        "waterTemperature": {
+            "noaa": 4.05
+        },
+        "waveDirection": {
+            "noaa": 359.1
+        },
+        "waveHeight": {
+            "noaa": 0.68
+        },
+        "wavePeriod": {
+            "noaa": 3.61
+        },
+        "windDirection": {
+            "noaa": 344.38
+        },
+        "windSpeed": {
+            "noaa": 2.29
+        },
+        "windWaveDirection": {
+            "noaa": 347.98
+        },
+        "windWaveHeight": {
+            "noaa": 0.56
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 4.19
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.52
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.12
+        },
+        "swellDirection": {
+            "noaa": 81.13
+        },
+        "swellHeight": {
+            "noaa": 0.35
+        },
+        "swellPeriod": {
+            "noaa": 4.84
+        },
+        "time": 21,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 3.35
+        },
+        "waveDirection": {
+            "noaa": 8.64
+        },
+        "waveHeight": {
+            "noaa": 0.65
+        },
+        "wavePeriod": {
+            "noaa": 3.64
+        },
+        "windDirection": {
+            "noaa": 358.06
+        },
+        "windSpeed": {
+            "noaa": 2
+        },
+        "windWaveDirection": {
+            "noaa": 353.18
+        },
+        "windWaveHeight": {
+            "noaa": 0.52
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.51
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 138.19
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.12
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.15
+        },
+        "swellDirection": {
+            "noaa": 80.88
+        },
+        "swellHeight": {
+            "noaa": 0.34
+        },
+        "swellPeriod": {
+            "noaa": 4.8
+        },
+        "time": 22,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 2.65
+        },
+        "waveDirection": {
+            "noaa": 18.19
+        },
+        "waveHeight": {
+            "noaa": 0.62
+        },
+        "wavePeriod": {
+            "noaa": 3.67
+        },
+        "windDirection": {
+            "noaa": 11.75
+        },
+        "windSpeed": {
+            "noaa": 1.7
+        },
+        "windWaveDirection": {
+            "noaa": 358.38
+        },
+        "windWaveHeight": {
+            "noaa": 0.49
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 3.15
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 135.37
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.14
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.47
+        },
+        "swellDirection": {
+            "noaa": 97.42
+        },
+        "swellHeight": {
+            "noaa": 0.28
+        },
+        "swellPeriod": {
+            "noaa": 5.5
+        },
+        "time": 23,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 2.25
+        },
+        "waveDirection": {
+            "noaa": 40.43
+        },
+        "waveHeight": {
+            "noaa": 0.59
+        },
+        "wavePeriod": {
+            "noaa": 4.07
+        },
+        "windDirection": {
+            "noaa": 11.54
+        },
+        "windSpeed": {
+            "noaa": 1.51
+        },
+        "windWaveDirection": {
+            "noaa": 17.76
+        },
+        "windWaveHeight": {
+            "noaa": 0.49
+        }
+    },
+    {
+        "airTemperature": {
+            "noaa": 2.78
+        },
+        "cloudCover": {
+            "noaa": 0
+        },
+        "secondarySwellDirection": {
+            "noaa": 132.56
+        },
+        "secondarySwellHeight": {
+            "noaa": 0.15
+        },
+        "secondarySwellPeriod": {
+            "noaa": 6.79
+        },
+        "swellDirection": {
+            "noaa": 113.95
+        },
+        "swellHeight": {
+            "noaa": 0.23
+        },
+        "swellPeriod": {
+            "noaa": 6.2
+        },
+        "time": 0,
+        "visibility": {
+            "noaa": 24.14
+        },
+        "waterTemperature": {
+            "noaa": 1.85
+        },
+        "waveDirection": {
+            "noaa": 62.66
+        },
+        "waveHeight": {
+            "noaa": 0.55
+        },
+        "wavePeriod": {
+            "noaa": 4.48
+        },
+        "windDirection": {
+            "noaa": 11.34
+        },
+        "windSpeed": {
+            "noaa": 1.32
+        },
+        "windWaveDirection": {
+            "noaa": 37.13
+        },
+        "windWaveHeight": {
+            "noaa": 0.49
+        }
+    }
+]

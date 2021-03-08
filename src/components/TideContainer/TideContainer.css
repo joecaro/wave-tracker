@@ -1,6 +1,13 @@
 .TideContainer {
-  border-radius: 5px;
-  width: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: -25px;
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 60vh;
+  z-index: 2;
 }
 
 button {

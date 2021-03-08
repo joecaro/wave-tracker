@@ -1,11 +1,21 @@
 .WaveStatsLists {
   display: flex;
   flex-wrap: wrap;
+  overflow: scroll;
   justify-content: center;
-  overflow: wrap;
-  height: 56vh;
+  height: 258px;
   width: 100vw;
   position: fixed;
-  bottom: 0;
+  bottom: 27vh;
   z-index: 2;
+}
+
+
+.GraphCard{
+  text-align: center;
+} 
+
+rect{
+  background-color: antiquewhite;
+  border-radius: 10px;
 }

@@ -1,16 +1,16 @@
-import React, {useEffect} from "react";
+import React, {useEffect} from 'react';
 import { curveCardinal } from "@visx/curve";
 import { Group } from "@visx/group";
 import { LinePath } from "@visx/shape";
 import { scaleLinear } from "@visx/scale";
 import { AxisBottom, AxisLeft } from "@visx/axis";
-import "./Graph.css";
 
-function Graph(props) {
+
+const WindWaveGraph = (props) => {
 
   useEffect(() => {
     if(new Date().getHours() >= 7){
-      document.getElementById('waveRect').setAttribute('fill', props.colors.nightGraphColor)
+      document.getElementById('windRect').setAttribute('fill', props.colors.nightGraphColor)
     }
 
   }, [])
@@ -25,12 +25,14 @@ function Graph(props) {
     arr.forEach((element, index) => {
       data.push({
         time: index,
-        height: ((element.waveHeight.noaa * 3.281)*(5/8)).toFixed(2),
+        height: ((element.windWaveHeight.noaa * 3.281)*(5/8)).toFixed(2),
       });
     });
   };
 
   getData(props.data);
+
+  let direction = data[currentTime].swellDirection;
 
   const getX = (d) => d.time;
   const getY = (d) => d.height;
@@ -43,7 +45,7 @@ function Graph(props) {
   const yScale = scaleLinear({
     range: [height-60, 0],
     round: false,
-    domain: [0, Math.max(...data.map(getY))],
+    domain: [Math.min(...data.map(getY)), Math.max(...data.map(getY))],
   });
 
   const compose = (scale, accessor) => (data) => scale(accessor(data));
@@ -51,9 +53,9 @@ function Graph(props) {
   const yPoint = compose(yScale, getY);
   return (
     <div className='GraphCard'>
-      <h3>Wave Height</h3>
+      <h3>Wind Wave Height {direction}</h3>
       <svg width={width} height={height} className='Graph'>
-        <rect id='waveRect' width={width} height={height} fill='#ffffff' rx={15} ry={15} />
+        <rect id='windRect' width={width} height={height} fill='#ffffff' rx={15} ry={15} />
         <Group left={35} top={10}>
           {data.map((d, j) => (
             <circle
@@ -78,12 +80,12 @@ function Graph(props) {
             markerStart={"x"}
             markerEnd={">"}
           />
-          <AxisBottom scale={xScale} top={40} hideTicks={true} label={"Time"} numTicks={6}/>
-          <AxisLeft scale={yScale} hideTicks={true} hideAxisLine={true} hideZero={true} numTicks={3} />
+          <AxisBottom scale={xScale} hideTicks={true}  top={40} label={"Time"} numTicks={6} />
+          <AxisLeft scale={yScale} hideTicks={true} hideAxisLine={true} numTicks={3} />
         </Group>
       </svg>
     </div>
   );
 }
 
-export default Graph;
+export default WindWaveGraph;
