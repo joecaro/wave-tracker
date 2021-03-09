@@ -50,6 +50,15 @@ function Graph(props) {
   const compose = (scale, accessor) => (data) => scale(accessor(data));
   const xPoint = compose(xScale, getX);
   const yPoint = compose(yScale, getY);
+
+  const tickLabelProps = () => ({ 
+    fill: '#fff', 
+    fontSize: 12, 
+    fontFamily: "sans-serif", 
+    textAnchor: "middle",
+    fontWeight: 100
+  })
+
   return (
     <div className='GraphCard'>
       <h3>Tide Height</h3>
@@ -92,12 +101,15 @@ function Graph(props) {
             top={65}
             label={"Time"}
             numTicks={6}
+            stroke={'#fff'}
+            tickLabelProps={tickLabelProps}
           />
           <AxisLeft
             scale={yScale}
             hideTicks={true}
             hideAxisLine={true}
             numTicks={3}
+            tickLabelProps={tickLabelProps}
           />
         </Group>
       </svg>

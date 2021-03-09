@@ -4,6 +4,7 @@ import { Bar } from "@visx/shape";
 import { scaleLinear } from "@visx/scale";
 import { AxisBottom, AxisLeft } from "@visx/axis";
 import degtoCard from "../../lib/degToCard";
+import {GraphText} from './GraphElements'
 import "./Graph.css";
 
 function Graph(props) {
@@ -74,6 +75,15 @@ function Graph(props) {
   const xBar = compose(xScale, getX);
   const yBar = compose(yScale, getY);
 
+
+  const tickLabelProps = () => ({ 
+    fill: '#fff', 
+    fontSize: 12, 
+    fontFamily: "sans-serif", 
+    textAnchor: "middle",
+    fontWeight: 50
+  })
+
   return (
     <div className='GraphCard'>
       <h3>
@@ -84,10 +94,10 @@ function Graph(props) {
           : "Wind Wave"}{" "}
         Height
       </h3>
-      <p className='graphText'>
+      <GraphText currentTime={currentTime}>
         {period}
         {direction}
-      </p>
+      </GraphText>
       <svg width={width} height={height}>
         <rect
           id={`${props.type}Rect`}
@@ -111,7 +121,7 @@ function Graph(props) {
                   y={barY}
                   width={barWidth}
                   height={barHeight}
-                  fill={getX(d) === currentTime ? "#ffd930" : "#197fb6"}
+                  fill={getX(d) === currentTime ? "#ffd930" :currentTime >= 19 ? '#0c5153' : "#197fb6"}
                 />
                 <AxisBottom
                   scale={xScale}
@@ -119,12 +129,16 @@ function Graph(props) {
                   hideZero={true}
                   top={65}
                   numTicks={6}
+                  stroke={currentTime >= 19 ? '#fff' : "#000"}
+                  tickLabelProps={tickLabelProps}
                 />
                 <AxisLeft
                   scale={yScale}
                   hideTicks={true}
                   hideAxisLine={true}
                   numTicks={3}
+                  tickLabelProps={tickLabelProps}
+                  left={-5}
                 />
               </>
             );

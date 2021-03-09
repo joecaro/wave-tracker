@@ -13,16 +13,14 @@ function App() {
   useEffect(() => {
     if (time >= 19) {
       document.getElementById("root").className = "rootNight";
-      document.getElementsByTagName("rect").fill = "aaaaaa";
     } else document.getElementById("root").className = "rootDay";
-    document.getElementsByTagName("rect").fill = "aaaaaa";
   });
 
   const graphWidth = window.innerWidth < 1000 ? window.innerWidth * 0.9 : 300;
   const graphHeight = window.innerHeight < 750 ? 100 : 125;
 
   let dayGraphColor = "#ffffff";
-  let nightGraphColor = "#777777";
+  let nightGraphColor = "#101c2d";
 
   let data = waveData;
   let currentIndex = new Date().getHours();

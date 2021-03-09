@@ -17,3 +17,30 @@ export const MenuIcon = styled.div`
   width: 2rem;
   height: 2rem;
 `;
+
+export const WhiteBackground = styled.div`
+position: absolute;
+background-color: ${({currentTime}) => (currentTime >= 19 ? "#fff" : "#fff")};
+bottom: -94vh;
+width: 100vw;
+height: 100vh;
+text-align: center;
+overflow: wrap;
+`
+
+export const MenuList = styled.div`
+`
+
+export const MenuItem = styled.div`
+width: fit-content;
+margin: 10vh auto;
+padding: 4px;
+border-radius: 4px;
+text-align: center;
+display: block;
+font-weight: 600;
+font-size: 1.5rem;
+:hover {
+  background-color: #aaa;
+}
+`

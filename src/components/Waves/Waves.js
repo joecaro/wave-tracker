@@ -1,5 +1,5 @@
-import React, { setState, useState } from "react";
-import { WaveMenu, MenuIcon } from "./WaveElements";
+import React, { useState } from "react";
+import { WaveMenu, MenuIcon, WhiteBackground, MenuList, MenuItem } from "./WaveElements";
 import "./Waves.css";
 
 const Waves = () => {
@@ -8,6 +8,8 @@ const Waves = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  let currentTime = new Date().getHours()
 
   return (
     <WaveMenu isOpen={isOpen}>
@@ -48,9 +50,13 @@ const Waves = () => {
           <use xlinkHref='#gentle-wave' x='48' y='7' fill='#fff' />
         </g>
       </svg>
-      <div className='white-background'>
-        <div className='menuDetails'></div>
-      </div>
+      <WhiteBackground currentTime={currentTime}>
+      <MenuList>
+        <MenuItem>Item</MenuItem>
+        <MenuItem>Item</MenuItem>
+        <MenuItem>Item</MenuItem>
+      </MenuList>
+      </WhiteBackground>
     </WaveMenu>
   );
 };
