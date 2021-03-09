@@ -1,11 +1,10 @@
 .waves {
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 15vh;
   min-height: 100px;
   max-height: 600px;
   bottom: 5vh;
-  z-index: 1;
 }
 
 .parallax > use {
@@ -28,17 +27,21 @@
   animation-duration: 18s;
 }
 
+.white-background {
+  position: absolute;
+  background-image: linear-gradient(white 50%, #1fecf3 80%, #15358d 100%);
+  bottom: -94vh;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: wrap;
+}
+
 @keyframes move-forever {
   0% {
     transform: translate3d(-90px, 0, 0);
   }
   100% {
     transform: translate3d(85px, 0, 0);
-  }
-}
-
-@media (max-height: 700px) {
-  .waves {
-    height: 20vh;
   }
 }

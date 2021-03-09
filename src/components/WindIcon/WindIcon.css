@@ -1,16 +1,20 @@
 .windIcon {
-    position: fixed;
-    left: 10%;
-    top: 5%;
-    text-align: center;
-    font-weight: 600;
-    color: white;
-  }
+  position: fixed;
+  left: 5%;
+  top: 3%;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
 
 .arrow {
   font-size: 3.5em;
 }
 
-.speedText{
-  margin-top: 10px;
+.speedText {
+  margin-top: 22px;
+}
+
+.directionText {
+  margin: 0;
 }

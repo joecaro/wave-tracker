@@ -1,81 +1,42 @@
 const fetch = require("node-fetch");
 const write = require("write");
-function setStartAndEndTimes(){
-  const startTime  = new Date
-  startTime.setHours(0)
-  startTime.setMinutes(0)
-  startTime.setSeconds(0)
-  startTime.setMilliseconds(0)
-  let start = startTime.toISOString()
-    
-  const endTime  = new Date
-  endTime.setDate(endTime.getDate() + 1)
-  endTime.setHours(0)
-  endTime.setMinutes(0)
-  endTime.setSeconds(0)
-  endTime.setMilliseconds(0)
-  let end = endTime.toISOString()
+function setStartAndEndTimes() {
+  const startTime = new Date();
+  startTime.setHours(0);
+  startTime.setMinutes(0);
+  startTime.setSeconds(0);
+  startTime.setMilliseconds(0);
+  let start = startTime.toISOString();
 
-  return [start, end]
+  const endTime = new Date();
+  endTime.setDate(endTime.getDate() + 1);
+  endTime.setHours(0);
+  endTime.setMinutes(0);
+  endTime.setSeconds(0);
+  endTime.setMilliseconds(0);
+  let end = endTime.toISOString();
+
+  return [start, end];
 }
-
-var degToCard = function (deg) {
-  if (deg > 11.25 && deg <= 33.75) {
-    return "NNE";
-  } else if (deg > 33.75 && deg <= 56.25) {
-    return "ENE";
-  } else if (deg > 56.25 && deg <= 78.75) {
-    return "E";
-  } else if (deg > 78.75 && deg <= 101.25) {
-    return "ESE";
-  } else if (deg > 101.25 && deg <= 123.75) {
-    return "ESE";
-  } else if (deg > 123.75 && deg <= 146.25) {
-    return "SE";
-  } else if (deg > 146.25 && deg <= 168.75) {
-    return "SSE";
-  } else if (deg > 168.75 && deg <= 191.25) {
-    return "S";
-  } else if (deg > 191.25 && deg <= 213.75) {
-    return "SSW";
-  } else if (deg > 213.75 && deg <= 236.25) {
-    return "SW";
-  } else if (deg > 236.25 && deg <= 258.75) {
-    return "WSW";
-  } else if (deg > 258.75 && deg <= 281.25) {
-    return "W";
-  } else if (deg > 281.25 && deg <= 303.75) {
-    return "WNW";
-  } else if (deg > 303.75 && deg <= 326.25) {
-    return "NW";
-  } else if (deg > 326.25 && deg <= 348.75) {
-    return "NNW";
-  } else {
-    return "N";
-  }
-};
 
 function convertTime(x) {
-  let time = new Date(x.replace(" ", "T")).toLocaleTimeString(
-      "en-GB",
-      {
-        hour: "2-digit",
-        minute: "2-digit",
-      }
-    );
+  let time = new Date(x.replace(" ", "T")).toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
   let [hour, minutes] = time.split(":").map((time) => parseInt(time));
-  let graphTime =  hour + (minutes/60);
-  return graphTime
+  let graphTime = hour + minutes / 60;
+  return graphTime;
 }
 
-function convertToFeet(height){
-  let x = (height * 3.281).toFixed(2)
-  return x
+function convertToFeet(height) {
+  let x = (height * 3.281).toFixed(2);
+  return x;
 }
 
 const lat = 33.79;
 const lng = -78.73;
-let [start, end] =setStartAndEndTimes()
+let [start, end] = setStartAndEndTimes();
 const params =
   "airTemperature,cloudCover,visibility,seaLevel,swellHeight,swellPeriod,swellDirection,secondarySwellHeight,secondarySwellPeriod,secondarySwellDirection,waterTemperature,waveDirection,waveHeight,wavePeriod,windWaveHeight,windWaveDirection,windDirection,windSpeed";
 const WAVE_API_KEY =
@@ -93,12 +54,11 @@ const getData = async () => {
   );
   let data = await response.json();
 
-  let list = data.hours
-  list.forEach(element => {
-     let time = element.time;
-     element.time = convertTime(time) 
+  let list = data.hours;
+  list.forEach((element) => {
+    let time = element.time;
+    element.time = convertTime(time);
   });
-
 
   let file = JSON.stringify(list);
   write.sync("data.json", file, (err) => {
@@ -107,7 +67,6 @@ const getData = async () => {
   });
   console.log(data);
 };
-
 
 const getTide = async () => {
   let response = await fetch(
@@ -120,15 +79,15 @@ const getTide = async () => {
   );
   let data = await response.json();
 
-  let list = data.data
-  list.forEach(element => {
-     let x = element.time;
-     let y = element.sg
-      element.time = convertTime(x) 
-      element.sg = convertToFeet(y)
+  let list = data.data;
+  list.forEach((element) => {
+    let x = element.time;
+    let y = element.sg;
+    element.time = convertTime(x);
+    element.sg = convertToFeet(y);
   });
 
-  list.pop()
+  list.pop();
 
   let file = JSON.stringify(list);
   write.sync("tide.json", file, (err) => {
@@ -137,8 +96,6 @@ const getTide = async () => {
   });
   console.log(data);
 };
-
-
 
 getData();
 getTide();

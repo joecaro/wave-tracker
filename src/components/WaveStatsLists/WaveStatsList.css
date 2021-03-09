@@ -3,19 +3,19 @@
   flex-wrap: wrap;
   overflow: scroll;
   justify-content: center;
-  height: 258px;
+  height: 300px;
   width: 100vw;
   position: fixed;
   bottom: 27vh;
   z-index: 2;
 }
 
-
-.GraphCard{
+.GraphCard {
   text-align: center;
-} 
+  max-height: 150px;
+}
 
-rect{
+rect {
   background-color: antiquewhite;
   border-radius: 10px;
 }

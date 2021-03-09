@@ -1,15 +1,24 @@
-import React from "react";
+import React, { setState, useState } from "react";
+import { WaveMenu, MenuIcon } from "./WaveElements";
 import "./Waves.css";
 
 const Waves = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div>
+    <WaveMenu isOpen={isOpen}>
+      <MenuIcon onClick={toggle}>
+        <i class='bi bi-list'></i>
+      </MenuIcon>
       <svg
-        class='waves'
+        className='waves'
         xmlns='http://www.w3.org/2000/svg'
         xmlnsXlink='http://www.w3.org/1999/xlink'
         viewBox='0 24 150 28'
-        preserveAspectRatio='no'
         shapeRendering='auto'>
         <defs>
           <path
@@ -17,7 +26,7 @@ const Waves = () => {
             d='M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z'
           />
         </defs>
-        <g class='parallax'>
+        <g className='parallax'>
           <use
             xlinkHref='#gentle-wave'
             x='48'
@@ -39,8 +48,10 @@ const Waves = () => {
           <use xlinkHref='#gentle-wave' x='48' y='7' fill='#fff' />
         </g>
       </svg>
-      <div className='white-background'></div>
-    </div>
+      <div className='white-background'>
+        <div className='menuDetails'></div>
+      </div>
+    </WaveMenu>
   );
 };
 

@@ -21,9 +21,13 @@ const TideCard = ({ tides }) => {
 
   const handleType = (type) => {
     if (type === "high") {
-      return <i style={{ color: "#1ff3e1" }} class='bi bi-caret-up-fill'></i>;
+      return (
+        <i style={{ color: "#1ff3e1" }} className='bi bi-caret-up-fill'></i>
+      );
     } else
-      return <i style={{ color: "#1f158d" }} class='bi bi-caret-down-fill'></i>;
+      return (
+        <i style={{ color: "#1f158d" }} className='bi bi-caret-down-fill'></i>
+      );
   };
   return tides.map((tide) => {
     let time = new Date(tide.time.replace(" ", "T")).toLocaleTimeString(

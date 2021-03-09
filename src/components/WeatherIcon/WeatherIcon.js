@@ -1,27 +1,27 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./WeatherIcon.css";
 
 const Sun = (props) => {
-const [day, setHidden] = useState(true)  
+  const [day, setHidden] = useState(true);
 
   useEffect(() => {
-    if(props.time >= 7){
-      setHidden(false)
+    if (new Date().getHours >= 19) {
+      setHidden(false);
     }
-  }, [])
-  
+  }, []);
+
   let temp = Math.round(props.data.airTemperature.noaa * (9 / 5) + 32);
 
-  function findCloudiness (clouds){
-    if(clouds <= 5){
-      return "Clear"
-    }else if(clouds <= 20){
-      return "Little Clouds"
-    }else if(clouds <= 40){
-      return "Scattered Clouds"
-    }else if(clouds <= 70){
-      return "Cloudy"
-    }else return "Overcast"
+  function findCloudiness(clouds) {
+    if (clouds <= 5) {
+      return "Clear";
+    } else if (clouds <= 20) {
+      return "Little Clouds";
+    } else if (clouds <= 40) {
+      return "Scattered Clouds";
+    } else if (clouds <= 70) {
+      return "Cloudy";
+    } else return "Overcast";
   }
 
   let cloudCover = props.data.cloudCover.noaa;
@@ -33,7 +33,7 @@ const [day, setHidden] = useState(true)
           style={{
             color: "#ffd930",
             fontSize: "5em",
-            display: (day? "initial" : "none")
+            display: day ? "initial" : "none",
           }}
           className='bi bi-brightness-high-fill'></i>
       </div>
@@ -42,9 +42,9 @@ const [day, setHidden] = useState(true)
           style={{
             color: "#cccccc",
             fontSize: "5em",
-            display: (day? "none" : "initial"),
+            display: day ? "none" : "initial",
           }}
-           class="bi bi-moon-stars-fill"></i>
+          className='bi bi-moon-stars-fill'></i>
       </div>
       <div className='cloud1'>
         <i className='bi bi-cloud-fill'></i>
@@ -52,7 +52,9 @@ const [day, setHidden] = useState(true)
       <div className='cloud2'>
         <i className='bi bi-cloud-fill'></i>
       </div>
-      <p>{temp}&#176; - {findCloudiness(cloudCover)}</p>
+      <p>
+        {temp}&#176; - {findCloudiness(cloudCover)}
+      </p>
     </div>
   );
 };
