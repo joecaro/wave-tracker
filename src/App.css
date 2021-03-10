@@ -1,10 +1,5 @@
 .card {
-  height: var(--card-height);
-  min-height: var(--card-minHeight);
+  height: var(10vh);
+  min-height: var(120px);
   margin: 0 25px;
-}
-
-h3{
-  margin: 0 auto auto auto;
-  color: white;
 }

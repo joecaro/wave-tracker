@@ -34,6 +34,7 @@ function convertToFeet(height) {
   return x;
 }
 
+//request headers
 const lat = 33.79;
 const lng = -78.73;
 let [start, end] = setStartAndEndTimes();
@@ -41,9 +42,9 @@ const params =
   "airTemperature,cloudCover,visibility,seaLevel,swellHeight,swellPeriod,swellDirection,secondarySwellHeight,secondarySwellPeriod,secondarySwellDirection,waterTemperature,waveDirection,waveHeight,wavePeriod,windWaveHeight,windWaveDirection,windDirection,windSpeed";
 const WAVE_API_KEY =
   "4a275400-7bbd-11eb-8ad5-0242ac130002-4a27548c-7bbd-11eb-8ad5-0242ac130002";
-const WEATHER_API_KEY = "66cfb3f3063ff2c5b5e753e693508725";
 
-const getData = async () => {
+//request functions
+const getWaveData = async () => {
   let response = await fetch(
     `https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}&start=${start}&end=${end}&source=noaa`,
     {
@@ -61,7 +62,7 @@ const getData = async () => {
   });
 
   let file = JSON.stringify(list);
-  write.sync("data.json", file, (err) => {
+  write.sync("../src/lib/data.json", file, (err) => {
     if (err) throw err;
     console.log("file has been saved");
   });
@@ -80,41 +81,23 @@ const getTide = async () => {
   let data = await response.json();
 
   let list = data.data;
-  list.forEach((element) => {
+  list.forEach((element, index) => {
     let x = element.time;
     let y = element.sg;
-    element.time = convertTime(x);
+    if (index === 24) {
+      element.time = 24;
+      element.sg = convertToFeet(y);
+    } else element.time = convertTime(x);
     element.sg = convertToFeet(y);
   });
 
-  list.pop();
-
   let file = JSON.stringify(list);
-  write.sync("tide.json", file, (err) => {
+  write.sync("../src/lib/tide.json", file, (err) => {
     if (err) throw err;
     console.log("file has been saved");
   });
   console.log(data);
 };
 
-getData();
+getWaveData();
 getTide();
-
-// let data = {
-//   airTemperature: "60",
-//   seaLevel: "1.4",
-//   swellHeight: "1",
-//   swellPeriod: "6",
-//   swellDirection: "270",
-//   secondarySwellHeight: ".5",
-//   secondarySwellPeriod: "3",
-//   secondarySwellDirection: "300",
-//   waterTemperature: "62",
-//   waveDirection: "273",
-//   waveHeight: "2.3",
-//   wavePeriod: "6",
-//   windWaveHeight: "3",
-//   windWaveDirection: "275",
-//   windDirection: "280",
-//   windSpeed: "10",
-// };

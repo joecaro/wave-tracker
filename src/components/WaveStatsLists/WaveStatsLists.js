@@ -1,10 +1,11 @@
 import React from "react";
 import Graph from "../Graph/Graph";
+import { WaveStatsList } from "./WaveStatsListElements";
 import "./WaveStatsList.css";
 
 const WaveStatsLists = (props) => {
   return (
-    <div className='WaveStatsLists'>
+    <WaveStatsList>
       <Graph
         key={"wave"}
         type={"wave"}
@@ -12,24 +13,9 @@ const WaveStatsLists = (props) => {
         height={props.graphSize.graphHeight}
         width={props.graphSize.graphWidth}
         colors={props.graphColors}
+        time={props.time}
       />
-      <Graph
-        key={"swell"}
-        type={"swell"}
-        data={props.data}
-        height={props.graphSize.graphHeight}
-        width={props.graphSize.graphWidth}
-        colors={props.graphColors}
-      />
-      <Graph
-        key={"windWave"}
-        type={"windWave"}
-        data={props.data}
-        height={props.graphSize.graphHeight}
-        width={props.graphSize.graphWidth}
-        colors={props.graphColors}
-      />
-    </div>
+    </WaveStatsList>
   );
 };
 

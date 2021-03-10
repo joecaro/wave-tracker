@@ -1,16 +1,18 @@
 import React from "react";
 import TideGraph from "../TideGraph/TideGraph";
+import { TideContainerDiv } from "./TideContainerElements";
 import "./TideContainer.css";
 
 const TideContainer = (props) => {
   return (
-    <div className='TideContainer card'>
+    <TideContainerDiv>
       <TideGraph
         height={props.graphSize.graphHeight}
         width={props.graphSize.graphWidth}
         colors={props.graphColors}
+        time={props.time}
       />
-    </div>
+    </TideContainerDiv>
   );
 };
 

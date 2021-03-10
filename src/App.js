@@ -20,7 +20,7 @@ function App() {
   const graphHeight = window.innerHeight < 750 ? 100 : 125;
 
   let dayGraphColor = "#ffffff";
-  let nightGraphColor = "#101c2d";
+  let nightGraphColor = "#093f47 ";
 
   let data = waveData;
   let currentIndex = new Date().getHours();
@@ -30,11 +30,13 @@ function App() {
       <TideContainer
         graphSize={{ graphHeight, graphWidth }}
         graphColors={{ dayGraphColor, nightGraphColor }}
+        time={time}
       />
       <WaveStatsLists
         data={waveData}
         graphSize={{ graphHeight, graphWidth }}
         graphColors={{ dayGraphColor, nightGraphColor }}
+        time={time}
       />
       <WindIcon data={data[currentIndex]} />
       <WeatherIcon data={data[currentIndex]} time={time} />

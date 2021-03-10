@@ -1,12 +1,5 @@
 html,
 body {
-  --card-height: 10vh;
-  --card-minHeight: 120px;
-  --card-color: rgba(0, 0, 0, 0.103);
-  --card-margin: 5px;
-
-  --dark-blue: #2e72c0;
-  --light-blue: #0eafa2;
   overflow: none;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

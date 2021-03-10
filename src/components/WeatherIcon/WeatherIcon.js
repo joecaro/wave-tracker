@@ -4,12 +4,11 @@ import "./WeatherIcon.css";
 const Sun = (props) => {
   const [day, setDay] = useState(true);
 
-useEffect(() => {
-  console.log(new Date().getHours())
-    if (new Date().getHours() >= 19) {
+  useEffect(() => {
+    if (props.time >= 19) {
       setDay(!day);
     }
-  }, [])
+  }, []);
 
   let temp = Math.round(props.data.airTemperature.noaa * (9 / 5) + 32);
 
@@ -38,7 +37,7 @@ useEffect(() => {
           }}
           className='bi bi-brightness-high-fill'></i>
       </div>
-      <div className='moon' >
+      <div className='moon'>
         <i
           style={{
             color: "#cccccc",

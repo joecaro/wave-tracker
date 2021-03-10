@@ -1,16 +1,12 @@
-.WaveStatsLists {
+import styled from "styled-components";
+
+export const WaveStatsList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  overflow: scroll;
   justify-content: center;
   height: 300px;
   width: 100vw;
   position: fixed;
-  bottom: 27vh;
+  bottom: 25vh;
   z-index: 2;
-}
-
-.GraphCard {
-  text-align: center;
-  max-height: 150px;
-}
+`;
