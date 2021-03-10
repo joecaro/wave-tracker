@@ -4,9 +4,8 @@ import { Group } from "@visx/group";
 import { LinePath } from "@visx/shape";
 import { scaleLinear } from "@visx/scale";
 import { AxisBottom, AxisLeft } from "@visx/axis";
-import "./TideGraph.css";
 import tides from "../../lib/tide.json";
-import { Header, HeaderTitle } from "../Graph/GraphElements";
+import { Header, HeaderTitle, TideGraphText } from "../Graph/GraphElements";
 
 function Graph(props) {
   const width = props.width;
@@ -63,6 +62,9 @@ function Graph(props) {
     <div className='GraphCard'>
       <Header>
         <HeaderTitle currentTime={props.time}>Tide Height</HeaderTitle>
+        <TideGraphText currentTime={props.time}>
+          {tides[props.time].sg}ft
+        </TideGraphText>
       </Header>
       <svg width={width} height={height} className='Graph'>
         <rect

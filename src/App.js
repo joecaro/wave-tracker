@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import Waves from "./components/Waves/Waves";
-import WaveStatsLists from "./components/WaveStatsLists/WaveStatsLists";
 import WeatherIcon from "./components/WeatherIcon/WeatherIcon";
 import WindIcon from "./components/WindIcon/WindIcon";
 import waveData from "./lib/data.json";
-import TideContainer from "./components/TideContainer/TideContainer";
+import Today from "./components/Today/Today";
 
 function App() {
   let time = new Date().getHours();
@@ -16,7 +14,7 @@ function App() {
     } else document.getElementById("root").className = "rootDay";
   });
 
-  const graphWidth = window.innerWidth < 1000 ? window.innerWidth * 0.9 : 300;
+  const graphWidth = window.innerWidth < 1000 ? window.innerWidth * 0.9 : 500;
   const graphHeight = window.innerHeight < 750 ? 100 : 125;
 
   let dayGraphColor = "#ffffff";
@@ -27,16 +25,11 @@ function App() {
 
   return (
     <React.Fragment>
-      <TideContainer
+      <Today
         graphSize={{ graphHeight, graphWidth }}
         graphColors={{ dayGraphColor, nightGraphColor }}
         time={time}
-      />
-      <WaveStatsLists
         data={waveData}
-        graphSize={{ graphHeight, graphWidth }}
-        graphColors={{ dayGraphColor, nightGraphColor }}
-        time={time}
       />
       <WindIcon data={data[currentIndex]} />
       <WeatherIcon data={data[currentIndex]} time={time} />

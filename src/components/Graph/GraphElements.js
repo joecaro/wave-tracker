@@ -1,24 +1,39 @@
 import styled from "styled-components";
 
-export const GraphText = styled.div`
-  font-size: 0.75rem;
-  color: ${({ currentTime }) => (currentTime >= 19 ? "#fff" : "#000")};
-  margin: auto 7.2vw;
-`;
-
 export const Header = styled.div`
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const HeaderTitle = styled.h3`
-  color: ${({ currentTime }) => (currentTime >= 19 ? "#fff" : "#fff")};
-  margin: 10px 5.2vw;
+  width: 8rem;
+  text-align: center;
+  color: ${({ isSelected }) => (isSelected ? "#ffd930" : "#fff")};
+  top: 0;
+  margin: 0 auto;
 `;
 
 export const GraphDetails = styled.div`
-  position: absolute;
+  margin: 0 auto -30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 90%;
+`;
+
+export const GraphText = styled.p`
+  font-size: 0.68rem;
+  color: ${({ currentTime }) => (currentTime >= 19 ? "#fff" : "#000")};
+  z-index: 10;
+`;
+export const TideGraphText = styled.p`
+  font-size: 0.68rem;
+  margin: 7px 10em 10px -10em;
+  color: #fff;
+  z-index: 10;
+`;
+
+export const GraphContainer = styled.div`
+  position: absolute;
+  bottom: 0vh;
 `;
