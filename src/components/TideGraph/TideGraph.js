@@ -1,49 +1,39 @@
-import React, { useEffect } from "react";
-import { curveCardinal } from "@visx/curve";
+import React, { useEffect, useState } from "react";
 import { Group } from "@visx/group";
-import { LinePath } from "@visx/shape";
+import { curveCardinal } from "@visx/curve";
+import { AreaClosed, Bar } from "@visx/shape";
 import { scaleLinear } from "@visx/scale";
-import { AxisBottom, AxisLeft } from "@visx/axis";
-import tides from "../../lib/tide.json";
-import { Header, HeaderTitle, TideGraphText } from "../Graph/GraphElements";
+import { AxisBottom, AxisLeft, AxisRight } from "@visx/axis";
+import degtoCard from "../../lib/degToCard";
+import { getTideData, getX, getY } from "./graphFunctions";
+import { GraphContainer } from "./TideGraphElements";
+import { LinearGradient } from "@visx/gradient";
 
-function Graph(props) {
-  const width = props.width;
-  const height = props.height;
+function WaveGraph(props) {
+  const accentColor = "#edffea";
 
-  const data = [];
+  const width = props.graphWidth + 4;
+  const height = props.graphHeight;
 
-  useEffect(() => {
-    if (props.time >= 19) {
-      document
-        .getElementById("graphRect")
-        .setAttribute("fill", props.colors.nightGraphColor);
-    }
-  });
+  const tideData = [];
 
-  const getData = (arr) => {
-    arr.forEach((element, index) => {
-      data.push({
-        time: element.time,
-        height: element.sg,
-      });
-    });
+  const combineData = (arr) => {
+    return arr[0].concat(arr[1], arr[2]);
   };
+  let time = new Date().getHours();
+  getTideData(props.data, tideData);
 
-  getData(tides);
-
-  const getX = (d) => d.time;
-  const getY = (d) => d.height;
+  let combinedData = combineData([tideData]);
 
   const xScale = scaleLinear({
-    range: [0, width - 60],
+    range: [0, width],
     round: false,
-    domain: [0, Math.max(...data.map(getX))],
+    domain: [0, Math.max(...tideData.map(getX))],
   });
   const yScale = scaleLinear({
-    range: [height - 35, 0],
+    range: [height, 0],
     round: false,
-    domain: [Math.min(...data.map(getY)), Math.max(...data.map(getY))],
+    domain: [0, Math.max(...tideData.map(getY)) + 2],
   });
 
   const compose = (scale, accessor) => (data) => scale(accessor(data));
@@ -51,75 +41,83 @@ function Graph(props) {
   const yPoint = compose(yScale, getY);
 
   const tickLabelProps = () => ({
-    fill: props.time >= 19 ? "#fff" : "#000",
+    fill: "#000",
     fontSize: 12,
     fontFamily: "sans-serif",
     textAnchor: "middle",
-    fontWeight: 100,
+    fontWeight: 50,
   });
 
   return (
-    <div className='GraphCard'>
-      <Header>
-        <HeaderTitle currentTime={props.time}>Tide Height</HeaderTitle>
-        <TideGraphText currentTime={props.time}>
-          {tides[props.time].sg}ft
-        </TideGraphText>
-      </Header>
-      <svg width={width} height={height} className='Graph'>
-        <rect
-          id='graphRect'
-          width={width}
-          height={height}
-          fill='#fafeff'
-          rx={15}
-          ry={15}
-        />
-        <Group left={35} top={10}>
-          {data.map((d, j) => (
-            <line
-              key={j}
-              x1={xPoint(d)}
-              y1={height - 35}
-              x2={xPoint(d)}
-              y2={0}
-              stroke={d.time === props.time ? "#ff0000" : "rgba(0,0,0,0.0)"}
+    <>
+      <GraphContainer>
+        <svg width={width} height={height * 1.5} className='Graph'>
+          <Group left={-2} top={-50}>
+            <LinearGradient
+              id='area-gradient'
+              from={"#00bbbb"}
+              to={"#fff"}
+              toOpacity={0.1}
             />
-          ))}
-          <LinePath
-            curve={curveCardinal}
-            data={data}
-            x={(d) => xPoint(d) ?? 0}
-            y={(d) => yPoint(d) ?? 0}
-            stroke='#1873b0'
-            strokeWidth={2}
-            strokeOpacity={1}
-            shapeRendering='geometricPrecision'
-            markerMid='url(#marker-circle)'
-            markerStart={"x"}
-            markerEnd={">"}
-          />
-          <AxisBottom
-            scale={xScale}
-            hideTicks={true}
-            top={90}
-            label={"Time"}
-            numTicks={6}
-            stroke={props.time >= 19 ? "#fff" : "#000"}
-            tickLabelProps={tickLabelProps}
-          />
-          <AxisLeft
-            scale={yScale}
-            hideTicks={true}
-            hideAxisLine={true}
-            numTicks={3}
-            tickLabelProps={tickLabelProps}
-            left={-5}
-          />
-        </Group>
-      </svg>
-    </div>
+            <AreaClosed
+              key={(d) => `WaveAreaClosed-${getX(d)}`}
+              data={tideData}
+              x={(d) => xPoint(d) ?? 0}
+              y={(d) => yPoint(d) ?? 0}
+              yScale={yScale}
+              strokeWidth={1}
+              stroke={"#007777"}
+              fill={"url(#area-gradient)"}
+              curve={curveCardinal}
+            />
+
+            {tideData.map((d, j) => (
+              <line
+                key={j}
+                x1={xPoint(d)}
+                y1={height}
+                x2={xPoint(d)}
+                y2={30}
+                stroke={d.time === time ? "#ff0000" : "#00000000"}
+              />
+            ))}
+            <AxisBottom
+              scale={xScale}
+              numTicks={6}
+              hideTicks={true}
+              hideZero={true}
+              top={height}
+              stroke={"#777"}
+              strokeWidth={2}
+              tickLabelProps={tickLabelProps}
+            />
+            {/* <AxisLeft
+              scale={yScale}
+              hideTicks={false}
+              numTicks={3}
+              tickLength={12}
+              tickStroke={"transparent"}
+              hideZero={true}
+              tickLabelProps={tickLabelProps}
+              stroke={"#000"}
+              strokeWidth={1}
+              label={"Height (ft)"}
+              labelProps={{
+                y: -28,
+                x: -85,
+                fill: "#000",
+                fontSize: 14,
+                strokeWidth: 0,
+                stroke: "#000",
+                paintOrder: "stroke",
+                fontFamily: "sans-serif",
+              }}
+            /> */}
+          </Group>
+        </svg>
+      </GraphContainer>
+    </>
   );
 }
 
-export default Graph;
+export default WaveGraph;

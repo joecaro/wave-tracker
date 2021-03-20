@@ -1,12 +1,14 @@
 html,
 body {
-  overflow: none;
-  margin: 0;
+  background-color: #4ab6ff;
+  background-image: linear-gradient(150deg, #4ab6ff 20%, #00dab5 110%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -15,18 +17,15 @@ code {
     monospace;
 }
 
-.rootDay {
-  background-image: radial-gradient(
-    farthest-corner at 20px -50px,
-    #1fecf3 5%,
-    #15358d 100%
-  );
+::-webkit-scrollbar {
+  width: 12px; /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
 }
 
-.rootNight {
-  background-image: radial-gradient(
-    farthest-corner at 20px -50px,
-    #0c5153 5%,
-    #000a24 100%
-  );
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
 }

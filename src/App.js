@@ -1,12 +1,26 @@
-import React, { useEffect } from "react";
-import Waves from "./components/Waves/Waves";
-import WeatherIcon from "./components/WeatherIcon/WeatherIcon";
-import WindIcon from "./components/WindIcon/WindIcon";
-import waveData from "./lib/data.json";
-import Today from "./components/Today/Today";
+import React, { useEffect, useState } from "react";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Menu from "./components/Menu/Menu";
+import todayData from "./lib/today/data.json";
+import tomorrowData from "./lib/tomorrow/data.json";
+import tideDetails from "./lib/today/tide.json";
+import tideExtremes from "./lib/tideExtremes.json";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 function App() {
-  let time = new Date().getHours();
+  let time = 12;
+
+  const [data, setData] = useState(todayData);
+
+  const toggleData = (arr) => {
+    setData(arr);
+  };
+
+  const [windowDemensions, setWindowDemensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
   useEffect(() => {
     if (time >= 19) {
@@ -14,28 +28,64 @@ function App() {
     } else document.getElementById("root").className = "rootDay";
   });
 
-  const graphWidth = window.innerWidth < 1000 ? window.innerWidth * 0.9 : 500;
-  const graphHeight = window.innerHeight < 750 ? 100 : 125;
+  const graphWidth =
+    windowDemensions.width < 768 ? windowDemensions.width * 0.9 : 690;
+  const graphHeight = windowDemensions.height * 0.13;
 
-  let dayGraphColor = "#ffffff";
-  let nightGraphColor = "#093f47 ";
+  useEffect(() => {
+    function handleResize() {
+      setWindowDemensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
-  let data = waveData;
-  let currentIndex = new Date().getHours();
+  let weatherData = todayData.concat(tomorrowData);
 
   return (
     <React.Fragment>
-      <Today
-        graphSize={{ graphHeight, graphWidth }}
-        graphColors={{ dayGraphColor, nightGraphColor }}
-        time={time}
-        data={waveData}
+      <Header data={weatherData} />
+      <Main data={data} graphHeight={graphHeight} graphWidth={graphWidth} />
+      <Menu
+        dataSets={{ today: todayData, tomorrow: tomorrowData }}
+        toggleData={toggleData}
       />
-      <WindIcon data={data[currentIndex]} />
-      <WeatherIcon data={data[currentIndex]} time={time} />
-      <Waves />
     </React.Fragment>
   );
 }
 
 export default App;
+
+/* <Router>
+        <Switch>
+          <Route exact path='/'>
+            <Today
+              day={"today"}
+              key={"today"}
+              graphSize={{ graphHeight, graphWidth }}
+              graphColors={{ dayGraphColor, nightGraphColor }}
+              time={time}
+              data={waveData}
+            />
+          </Route>
+          <Route path='/tomorrow'>
+            <Today
+              day={"tomorrow"}
+              key={"today"}
+              graphSize={{ graphHeight, graphWidth }}
+              graphColors={{ dayGraphColor, nightGraphColor }}
+              time={time}
+              data={tomorrowData}
+            />
+          </Route>
+          <Route path='/threeDays'></Route>
+        </Switch>
+        <Waves />
+      </Router>
+      <WindIcon data={data[currentIndex]} />
+      <WeatherIcon data={data[currentIndex]} time={time} /> */
