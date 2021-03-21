@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import SmallGraph from "../SmallGraph/SmallGraph";
 import {
   Info,
   InfoCard,
@@ -11,6 +12,12 @@ import {
 } from "./InfoCardElements";
 
 const InfoCards = (props) => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  function toggleSelected() {
+    setIsSelected(!isSelected);
+  }
+
   return (
     <React.Fragment>
       {props.cards.map((element, index) => {
@@ -21,7 +28,7 @@ const InfoCards = (props) => {
               <InfoCardTitle>{element.name}</InfoCardTitle>
               <Info listLength={props.cards.length} index={index}>
                 <InfoTextGrid1>
-                  <Label>Height</Label>
+                  {/* <Label>Height</Label> */}
                   {element.height}
                 </InfoTextGrid1>
                 <InfoTextGrid2 style={{ fontSize: ".7rem" }}>
@@ -38,9 +45,13 @@ const InfoCards = (props) => {
             <InfoCard key={element.name} index={index}>
               <InfoIcon src={element.icon} listLength={props.cards.length} />
               <InfoCardTitle>{element.name}</InfoCardTitle>
-              <Info listLength={props.cards.length} index={index}>
+              <Info
+                listLength={props.cards.length}
+                index={index}
+                onClick={toggleSelected}
+                isSelected={isSelected}>
                 <InfoTextGrid1>
-                  <Label>{element.name !== "Wind" ? `Height` : `Speed`}</Label>
+                  {/* <Label>{element.name !== "Wind" ? `Height` : `Speed`}</Label> */}
                   {element.height}
                 </InfoTextGrid1>
                 <InfoTextGrid2 style={{ fontSize: ".7rem" }}>
@@ -56,6 +67,12 @@ const InfoCards = (props) => {
                   {element.heightSec}
                 </InfoTextGrid1>
               </Info>
+              {/* <SmallGraph
+                key={`${element.name}-graph`}
+                onClick={toggleSelected}
+                isSelected={isSelected}
+                data={props.graphData}
+              /> */}
             </InfoCard>
           );
       })}

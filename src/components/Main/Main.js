@@ -141,6 +141,7 @@ const Main = (props) => {
               <StatsCard
                 isDisplayed={isTideDisplayed}
                 key={"tideCard"}
+                graphData={props.data}
                 data={tideCards}
                 cards={tideCards}
               />
@@ -171,6 +172,7 @@ const Main = (props) => {
                 isDisplayed={isWaveDisplayed}
                 key={"waveCard"}
                 cards={waveCards}
+                graphData={props.data}
               />
             </Card>
             <GraphCard

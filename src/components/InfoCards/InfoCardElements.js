@@ -35,9 +35,9 @@ export const InfoCardTitle = styled.h4`
 export const Info = styled.section`
   width: 70%;
   height: ${({ index }) => (index === 0 ? "40%" : "70%")};
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: auto;
-  margin-left: 30%;
+  margin-left: 40%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
